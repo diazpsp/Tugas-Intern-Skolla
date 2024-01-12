@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class BounceView : BounceElement
 {
-    public SphereMovement ball;
+    
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    void Update(){
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        DisplayBounce();
+    }
+    void DisplayBounce(){
+        app.model.textView.text = app.model.stringTextTitle;
     }
 }

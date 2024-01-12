@@ -6,10 +6,11 @@ using UnityEngine.UI;
 
 public class CoinModel : CoinElement
 {
+    public string stringTitle;
     public float coinCount;
     public TMP_Text coinText;
     // Start is called before the first frame update
     
-   
+  
     
 }

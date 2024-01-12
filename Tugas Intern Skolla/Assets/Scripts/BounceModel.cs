@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class BounceModel : BounceElement
 {
     // public Collider playerColl;
+    public SphereMovement ball;
+    public string stringTextTitle;
     public Text textView;
     public int bounces;
     public int winCondition;

@@ -8,10 +8,12 @@ public class CoinView : CoinElement
     
     // Start is called before the first frame update
    
+    void Update(){
+        DisplayCoinCount();
+    }
     
-    void OnTriggerEnter(){
-        CoinApp.controller.OnTriggerCoin();
-        Destroy(gameObject);
+    void DisplayCoinCount(){
+        CoinApp.model.coinText.text = CoinApp.model.stringTitle;
     }
     
 }

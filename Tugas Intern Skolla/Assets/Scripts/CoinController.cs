@@ -9,7 +9,10 @@ public class CoinController: CoinElement
     // Start is called before the first frame update
     public void OnTriggerCoin(){
         CoinApp.model.coinCount++;
-        CoinApp.model.coinText.text = CoinApp.model.coinCount.ToString();
+        
+        CoinApp.model.stringTitle = "Coin: "+CoinApp.model.coinCount.ToString();
     }
+
+     
    
 }

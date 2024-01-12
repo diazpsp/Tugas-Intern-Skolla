@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BounceController : BounceElement
 {
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +19,11 @@ public class BounceController : BounceElement
     //handles the ball hit event
     public void OnBallGroundHit(){
         app.model.bounces++;
-        app.model.textView.text = app.model.bounces.ToString();
+        app.model.stringTextTitle = "Bounces: "+app.model.bounces.ToString();
+        
         if(app.model.bounces >= app.model.winCondition){
-            app.view.ball.enabled = false;
-            app.view.ball.GetComponent<Rigidbody>().isKinematic=true;
+            app.model.ball.enabled = false;
+            app.model.ball.GetComponent<Rigidbody>().isKinematic=true;
             OnGameComplete();
         }
     }

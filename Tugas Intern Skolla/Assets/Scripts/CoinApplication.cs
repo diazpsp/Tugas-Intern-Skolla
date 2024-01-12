@@ -12,5 +12,10 @@ public class CoinApplication : CoinElement
 }
 
 public class CoinElement : MonoBehaviour{
-    public CoinApplication CoinApp { get { return GameObject.FindObjectOfType<CoinApplication>(); }}
+    private CoinApplication coinApp;
+    public CoinApplication CoinApp { get { return coinApp; }}
+
+    protected virtual void Start(){
+        coinApp = FindObjectOfType<CoinApplication>();
+    }
 }
