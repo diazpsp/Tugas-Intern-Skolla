@@ -16,8 +16,8 @@ public class BallView : BounceElement
     
     void OnCollisionEnter(Collision coll){
         if(coll.gameObject.tag == "Ground"){
-            app.controller.OnBallGroundHit();
-            Debug.Log("SU");
+            // app.controller.OnBallGroundHit();
+            // Debug.Log("SU");
         }
     }
 }
