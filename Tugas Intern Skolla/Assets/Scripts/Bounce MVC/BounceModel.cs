@@ -11,5 +11,8 @@ public class BounceModel : BounceElement
     public float bounces;
     
     // Start is called before the first frame update
-    
+     public void AddBounce(float bounce)
+    {
+       bounces+=bounce;
+    }
 }

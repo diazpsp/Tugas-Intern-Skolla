@@ -32,7 +32,7 @@ public class SphereMovement : SphereMoveData
         if(coll.gameObject.tag == "Ground"){
            isGrounded = true;
            Debug.Log("collis");
-           mVCManager.AddBounce(1);
+           DependencyInjector.Instance.GetController<BounceController>().OnBallGroundHit();
         }  
     }
 

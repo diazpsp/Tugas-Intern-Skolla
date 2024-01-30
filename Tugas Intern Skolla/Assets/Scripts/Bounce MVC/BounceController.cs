@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class BounceController : Controller
 {
-    // public MVCManager mVCManager;
+    public BounceModel bounceModel;
+    public BounceView bounceView;
 
     public override Type GetControllerType()
     {
@@ -14,11 +15,12 @@ public class BounceController : Controller
 
     // Start is called before the first frame update
 
-    //handles the ball hit event
-    // public void OnBallGroundHit(){
+    // handles the ball hit event
+    public void OnBallGroundHit(){
      
-    //    mVCManager.AddBounce(1);
-    // }
+       bounceModel.AddBounce(1);
+        bounceView.GetBounce();
+    }
 //    public T GetView<T>() {
         
 //         return DependencyInjector.Instance.GetView<T>();

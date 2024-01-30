@@ -20,6 +20,7 @@ public abstract class Controller : MonoBehaviour
 
     //dibawah ini buat KEY (KATAKUNCI) nya di DICTIONARY. jadi buat tulisan TOK. ndak ada isinya. krn return_type nya harus Type
     //ini jg bisa di override ke class sembarang 
+    //method ini harus di implemen di semua class yang mewarisi
     public abstract Type GetControllerType();
 
     

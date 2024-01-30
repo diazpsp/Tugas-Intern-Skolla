@@ -29,6 +29,7 @@ public class DependencyInjector : MonoBehaviour
     //     coinModel.coinCount+=coin;
         
     // }
+    //make this class a singleton (only 1 class over all scenes(dontdestroyonload))
     public void Awake(){
         if(singletonDI==null){
             singletonDI = this;

@@ -859,7 +859,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604662827}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5dd707d7e06a0bb439abaf4ac9d6c04f, type: 3}
   m_Name: 
@@ -1678,6 +1678,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   e: 
+  bounceModel: {fileID: 878183080}
+  bounceView: {fileID: 1825445525}
 --- !u!4 &1145220756
 Transform:
   m_ObjectHideFlags: 0
@@ -2506,7 +2508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d543d3ad40c2ad4ba89cd3147dfbeee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mVCManager: {fileID: 2084568630}
+  bounceModel: {fileID: 878183080}
 --- !u!4 &1825445526
 Transform:
   m_ObjectHideFlags: 0

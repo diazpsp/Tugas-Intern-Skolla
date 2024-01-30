@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class BounceView : BounceElement
 {
-    public MVCManager mVCManager;
+    public BounceModel bounceModel;
     // Start is called before the first frame update
-    void Update(){
-
-        mVCManager.GetBounce();
+    public string GetBounce()
+    {
+        return bounceModel.textView.text = "Bounce: " + bounceModel.bounces.ToString();
     }
   
 }

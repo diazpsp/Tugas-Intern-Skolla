@@ -11,7 +11,7 @@ public class CoinController: Controller
    
      public void GetScoreCoin()
     {   
-        Debug.Log("ae");
+
         coinModel.AddScoreCoin(1);
         coinView.DisplayCoin(coinModel);
     }
