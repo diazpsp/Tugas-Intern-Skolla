@@ -7,13 +7,13 @@ public class SphereMoveData : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] public float speed ,jump,bounceCount,horizontal,vertical;
     public Rigidbody rb;
-    public BounceController balCon;
     public bool isGrounded = true;
-    public MVCManager mVCManager;
-    
+ 
     [SerializeField]
     private Transform cam;
     private Vector3 forwardRelative,rightRelative,moveDir;
+    
+    
    
     public void Jump(){
         if(Input.GetButtonDown("Jump")){ //getkeydown keycode.space?

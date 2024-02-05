@@ -2,6 +2,7 @@ using UnityEngine.UI;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Linq.Expressions;
 // using UnityEngine.EventSystems;
 
 public class SphereMovement : SphereMoveData
@@ -42,8 +43,11 @@ public class SphereMovement : SphereMoveData
 
     public void OnTriggerEnter(Collider coll){
         if(coll.gameObject.tag == "Coin"){
-            // mVCManager.coinController.OnTriggerCoin();
+           
             DependencyInjector.Instance.GetController<CoinController>().GetScoreCoin();
+        }
+        if(coll.gameObject.tag == "Power Up"){
+            
         }
     }
 }
