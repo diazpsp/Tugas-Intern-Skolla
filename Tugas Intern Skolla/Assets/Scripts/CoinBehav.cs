@@ -5,8 +5,11 @@ using UnityEngine;
 public class CoinBehav : CoinElement
 {
     // Start is called before the first frame update
-    void OnTriggerEnter(){
-        gameObject.SetActive(false);
+    void OnTriggerEnter(Collider col){
+        if(col.gameObject.tag == "Player")
+        {
+            gameObject.SetActive(false);
+        }
     }
     // Update is called once per frame
 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class FinishCondition : MonoBehaviour
 {
     public GameObject gameOverImage;
+    public bool isCompleted;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +18,7 @@ public class FinishCondition : MonoBehaviour
         
     }
     void OnTriggerEnter(){
-        gameOverImage.SetActive(true);
-        StartCoroutine(PauseTime());
+        isCompleted = true;
     }
-    IEnumerator PauseTime(){
-        yield return new WaitForSeconds(1f);
-        Time.timeScale = 0 ;
-    }
+    
 }

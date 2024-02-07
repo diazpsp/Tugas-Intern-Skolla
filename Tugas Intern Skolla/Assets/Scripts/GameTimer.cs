@@ -19,10 +19,13 @@ public class GameTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timerText.text = timer.ToString("Timer: "+(int)timer);
-        timer-=Time.deltaTime;
+        if(timer>0){
+            timerText.text = timer.ToString("Timer: "+(int)timer);
+            timer-=Time.deltaTime;
+        }
         if(timer<0){
-            Time.timeScale =0;
+            timerText.text = timer.ToString("Timer: "+(int)timer);
+            timer = 0;
         }
     }
 }

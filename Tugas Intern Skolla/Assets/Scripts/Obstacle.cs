@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
+    public GameObject player;
     [SerializeField] private PowerUpContainer powerUpContainer;
 
     // Start is called before the first frame update
