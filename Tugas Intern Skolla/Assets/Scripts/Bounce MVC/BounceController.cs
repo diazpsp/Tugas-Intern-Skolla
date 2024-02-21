@@ -13,18 +13,10 @@ public class BounceController : Controller
        return typeof(BounceController);
     }
 
-    // Start is called before the first frame update
-
-    // handles the ball hit event
+ 
     public void OnBallGroundHit(){
      
        bounceModel.AddBounce(1);
         bounceView.GetBounce();
     }
-//    public T GetView<T>() {
-        
-//         return DependencyInjector.Instance.GetView<T>();
-
-//     }
-
 }

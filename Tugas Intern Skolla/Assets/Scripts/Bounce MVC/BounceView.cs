@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BounceView : BounceElement
+public class BounceView : MonoBehaviour
 {
     public BounceModel bounceModel;
     // Start is called before the first frame update

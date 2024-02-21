@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BounceModel : BounceElement
+public class BounceModel : MonoBehaviour
 {
     // public Collider playerColl;
     public string stringTextTitle;

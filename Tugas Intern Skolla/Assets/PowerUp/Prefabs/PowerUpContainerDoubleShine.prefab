@@ -443,7 +443,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationX:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 0
       minScalar: 0
       maxCurve:
@@ -496,7 +496,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 0
       minScalar: 0
       maxCurve:
@@ -4756,7 +4756,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 6e629e770dbc8084185515f2d69bb428, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5251,7 +5250,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationX:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 0
       minScalar: 0
       maxCurve:
@@ -5304,7 +5303,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 0
       minScalar: 0
       maxCurve:
@@ -9564,7 +9563,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 870b1aab6db6b3a4793e20ba16c84c6d, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9630,7 +9628,7 @@ GameObject:
   - component: {fileID: 11400000}
   m_Layer: 0
   m_Name: PowerUp
-  m_TagString: Untagged
+  m_TagString: Time Extender
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9738,7 +9736,7 @@ GameObject:
   - component: {fileID: 400006}
   m_Layer: 0
   m_Name: PowerUpContainerDoubleShine
-  m_TagString: Untagged
+  m_TagString: Time Extender
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
