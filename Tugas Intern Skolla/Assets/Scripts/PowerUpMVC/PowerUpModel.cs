@@ -9,6 +9,6 @@ public class PowerUpModel : MonoBehaviour
 
     public float time ;
     public TMP_Text powerUpText;
-    // Start is called before the first frame update
+  
   
 }

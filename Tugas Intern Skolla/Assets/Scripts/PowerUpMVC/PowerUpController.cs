@@ -17,7 +17,7 @@ public class PowerUpController : Controller
     }
     
     public override Type GetControllerType(){
-        return typeof(PowerUpController);//coincontroller keregister 2x?
+        return typeof(PowerUpController);
     }
     void Update(){
         if(model.isPowerOn){

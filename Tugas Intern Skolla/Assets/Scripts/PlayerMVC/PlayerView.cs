@@ -27,7 +27,7 @@ public class PlayerView : MonoBehaviour
     }
 
     public void Jump(){
-        if(Input.GetButtonDown("Jump")){ //getkeydown keycode.space?
+        if(Input.GetButtonDown("Jump")){ 
         Debug.Log("Jump");
         rb.velocity = new Vector3(rb.velocity.x,jump,rb.velocity.z);
         
