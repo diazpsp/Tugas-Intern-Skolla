@@ -116,10 +116,10 @@ public class PlayerView : MonoBehaviour
     void TransferBall(Collider coll){
         
         if(time>0){
-            gameObject.GetComponent<SphereCollider>().enabled = false;
+            gameObject.GetComponent<CapsuleCollider>().enabled = false;
             
         }else{
-            gameObject.GetComponent<SphereCollider>().enabled = true;
+            gameObject.GetComponent<CapsuleCollider>().enabled = true;
             if(coll.gameObject.name == "Player 1" && model.whichCharacter != 0){
                 if(model.whichCharacter == 2){
                     model.whichCharacter = 0;
